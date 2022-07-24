@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit;
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    background-color: hsl(216, 50%, 16%);
+    height: 38rem;
+    width: 20rem;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+}
+
+.equilibrium{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.equilibrium :hover{
+    color:#15c1c3;
+}
+
+.imagem-fundo{
+    max-width: 320px;
+    border-radius: 10px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.relogio{
+    display: flex;
+    align-items: center;
+}
+
+.dono{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    font-size: 16px;
+    
+}
+
+.ethereum{
+    display: flex;
+    align-items: center;
+}
+
+.img-et{
+    margin: 0 8px 0 0px;
+}
+
+.foto{
+    max-width: 35px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin:15px 23px 5px 0px;
+}
+
+.texto-foto{
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.rel{
+    margin: 0 6px 0 0 ;
+}
+
+.nome{
+   color: hsl(0, 0%, 100%);
+}
+
+
