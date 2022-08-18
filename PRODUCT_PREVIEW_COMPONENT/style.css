@@ -9,7 +9,7 @@ body{
 
 
 .box{
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +20,7 @@ body{
     width: 22rem;
     height: 28.1rem;
     padding: 15px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 0 10px 10px 0;
 }
 
 .imag{
@@ -29,8 +28,7 @@ body{
     background-size: cover;
     width: 20rem;
     height: 30rem;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 .exp{
@@ -92,6 +90,7 @@ p{
     margin-top: 30px;
     border-radius: 1rem;
     border-color: transparent;
+    cursor: pointer;
 }
 
 .button :hover{
@@ -99,7 +98,10 @@ p{
 }
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
 
 
 @media (max-width: 475px){
@@ -114,8 +116,7 @@ p{
         background-size: cover;
         width: 19rem;
         height: 15rem;
-        border-bottom-left-radius: 0;
-        border-top-left-radius: 0;
+        border-radius: 10px 10px 0 0;
     }
 
     h1{
@@ -125,8 +126,7 @@ p{
     .text{
         height: 28rem;
         width: 17.1rem;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-radius: 0 0 10px 10px;
     }
 
     .price{

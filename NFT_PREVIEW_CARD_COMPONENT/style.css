@@ -8,7 +8,7 @@ body{
 }
 
 .box{
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ body{
 
 .texto{
     background-color: hsl(216, 50%, 16%);
-    height: 38rem;
+    height: 36rem;
     width: 20rem;
     padding: 15px;
     border-radius: 20px;
@@ -63,6 +63,7 @@ body{
 .ethereum{
     display: flex;
     align-items: center;
+    color:#15c1c3;
 }
 
 .img-et{
@@ -89,4 +90,26 @@ body{
    color: hsl(0, 0%, 100%);
 }
 
+.attribution { font-size: 11px; text-align: center; color: hsl(215, 51%, 70%);}
+.attribution a { 
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
 
+@media (max-width : 370px){
+    .texto{
+        background-color: hsl(216, 50%, 16%);
+        height: 32rem;
+        width: 15rem;
+        padding: 15px;
+        border-radius: 20px;
+        font-weight: 400;
+        color: hsl(215, 51%, 70%);
+        font-size: 18px;
+    }
+
+    .imagem-fundo{
+        max-width: 240px;
+        border-radius: 10px;
+    }
+}
