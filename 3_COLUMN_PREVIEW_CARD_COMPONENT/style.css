@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    border-color: transparent;
+    border-radius: 20px;
+    width: 8rem;
+    height: 3rem;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+    border-color: hsl(0, 0%, 95%);
+    border: solid;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    height: 20rem;
+    width: 14rem;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    height: 20rem;
+    width: 14rem;
+    padding: 30px;
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    height: 20rem;
+    width: 14rem;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.button_sedans{
+    color: hsl(31, 77%, 52%);
+}
+
+.button_suvs{
+    color:hsl(184, 100%, 22%)
+}
+
+.button_luxury{
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution { font-size: 11px; text-align: center; color: black;}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media (min-width: 1000px){
+    .cards{
+        display: flex;
+        flex-direction: row;
+        min-height: 80vh;
+    }
+
+    .suvs{
+       height: 25rem;
+       width: 15rem;
+       padding-top: 7rem;
+    }
+
+    .sedans{
+        height: 25rem;
+        width: 15rem;
+        padding-top: 7rem;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .luxury{
+        height: 25rem;
+        width: 15rem;
+        padding-top: 7rem;
+        border-radius: 0 15px 15px 0;
+    }
+
+    button{
+        margin-top: 5rem;
+    }
+
+    .button_luxury{
+        margin-top: 6rem;
+    }
+}
