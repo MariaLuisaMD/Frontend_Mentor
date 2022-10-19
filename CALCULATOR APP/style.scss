@@ -1,0 +1,140 @@
+:root{
+    --mainBackground: hsl(222, 26%, 31%);
+    --textColor: hsl(0, 0%, 100%);
+    --DisplayColor: hsl(224, 36%, 15%);
+    --KeyColor: hsl(223, 31%, 20%);
+    --equal:  hsl(6, 63%, 50%);
+    --reset: hsl(225, 21%, 49%);
+    --BackgroundKey: hsl(30, 25%, 89%);
+    --fontButton: hsl(221, 14%, 31%);
+    --textResetColor:hsl(0, 0%, 100%);
+    --textEqual: hsl(0, 0%, 100%);
+    --buttonShadow:  hsl(28, 16%, 65%);
+    --resetShadow: hsl(224, 28%, 35%);
+    --equalShadow: hsl(6, 70%, 34%);
+}
+
+body{
+    background-color: var(--mainBackground);
+    color: var(--textColor);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.princ{
+    width: 400px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+button{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--fontButton);
+    margin: 5px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--BackgroundKey);
+    margin-right: 8px;
+    box-shadow: 0px 5px var(--buttonShadow);
+}
+
+#keys{
+    background-color: var(--KeyColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: hsl(28, 16%, 65%);
+    height: 350px;
+}
+
+#reset{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#reset, #clear{
+  background-color: var(--reset);
+  color: var(--textResetColor);
+  box-shadow: 0px 5px var(--resetShadow);
+}
+
+#equal{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: var(--equal);
+    color: var(--textEqual);
+    box-shadow: 0px 5px var(--equalShadow);
+}
+
+
+#tela{
+    background-color: var(--DisplayColor);
+    height: 100px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 32px;
+    padding: 10px;
+    justify-content: end;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.escolha{
+    display: flex;
+    align-items: center;
+    input{
+        appearance: none;
+        background-color: var(--KeyColor);
+        height: 10px;
+        border-radius: 15px;
+        width: 50px;
+        padding: 5px;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 3px;
+    }
+    p{
+        font-size: 12px;
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+    
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 10px;}
+.attribution a { 
+    color: hsl(0, 0, 50%); 
+    text-decoration: none;
+}
+
+  
+@media (max-width: 800px) {
+    .princ{
+        width: 300px;
+    }
+}
+
+
